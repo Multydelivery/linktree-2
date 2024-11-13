@@ -31,11 +31,14 @@
         }
 
         h2 {
+            padding: 5px;
+            background-color: rgb(243, 235, 235);
+            border-radius: 4px;
             font-family: 'Saira', sans-serif;
             font-weight: 600;
             text-transform: uppercase;
-            color: rgb(251, 6, 6);
-            text-shadow: 0 0 1px transparent, 0 1px 2px rgb(0 0 0 / 50%);
+            color: rgb(156, 4, 133);
+            text-shadow: 10px 3px 5px, 3 1px 2px rgba(13, 52, 145, 0.5);
         }
 
         body >img {
@@ -48,6 +51,7 @@
         }
 
         section {
+            padding-top: 80px;
             display: grid;
             place-items: center;
             position: absolute;
@@ -77,17 +81,7 @@
             border-radius: 50%;
             box-shadow: 0 0 8px 1px lightblue;
         }
-        section footer p {
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 20px;
-            font-weight: bold;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            color: white;
-            text-align: center;
-            margin-top: 20px;
-        }
+        
 
         a {
             background-color: rgb(243, 235, 235);
@@ -97,7 +91,7 @@
             justify-content: center;
             border: 1.5px solid rgb(236, 218, 17);
             padding: 10px;
-            color: rgb(21, 11, 5);
+            color:  rgb(30, 24, 29);
             text-decoration: none;
             gap: 20px;
             align-items: center;
@@ -112,6 +106,27 @@
 
         a i {
             font-size: 1.3em;
+        }
+        section p {
+            color: rgb(156, 4, 133);
+            font-size: 1.2em;
+        }
+
+        .footer {
+            color: rgb(156, 4, 133);
+            background-color: rgb(243, 235, 235);
+            border-radius: 4px;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .footer a {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            text-decoration: none;
+            color: rgb(156, 4, 133);
         }
 
 
@@ -130,7 +145,7 @@
                     <p>@yuyu_artnails</p>
                     <span><i class="fa-solid fa-paintbrush"></i></span>
                 </a>
-                <a href="">
+                <a href="https://wa.me/18622966063">
                     <i class="fa-brands fa-square-whatsapp"></i>
                     <p>Whatsapp</p>
                 </a>
@@ -138,16 +153,16 @@
                     <i class="fa-brands fa-tiktok"></i>
                     <p>Tiktok</p>
                 </a>
-                <a href="">
-                    <i class="fa-brands fa-instagram"></i>
-                    <p>Instagram</p>
-                </a>
             </div>
-        </div>
-        <footer>
-            <p>cel: 862-296-6063</p>
-            <p>59 N Sessex Street Dover NJ</p>
-        </footer>
+            <div class="footer">
+                <p>Cell: 862-296-6063</p>
+                <p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=59+N+Sussex+Street+Dover+NJ" target="_blank" rel="noopener noreferrer">
+                        59 N Sussex Street, Dover NJ<i class="fa-solid fa-location-arrow"></i>
+                    </a>
+                </p>
+            </div>
+            
     </section>
 </body>
 

@@ -41,7 +41,7 @@
             text-shadow: 10px 3px 5px, 3 1px 2px rgba(13, 52, 145, 0.5);
         }
 
-        body >img {
+        body>img {
             object-fit: cover;
             position: absolute;
             top: 0;
@@ -58,7 +58,7 @@
             inset: 0;
             overflow-y: scroll;
         }
-        
+
         section div {
             display: flex;
             flex-direction: column;
@@ -71,19 +71,27 @@
             align-items: center;
         }
 
-        section > div {
+        section>div {
             padding: 100px 10px;
         }
 
-        
+
         section div img {
-           border-radius: 10%;
-           width: 100px;
-           aspect-ratio: 1 / 1;
-           box-shadow: 0 0 8px 1px rgb(25, 6, 0);
+            border-radius: 10%;
+            width: 100px;
+            aspect-ratio: 1 / 1;
+            box-shadow: 0 0 8px 1px rgb(25, 6, 0);
+            transition: transform 0.3s ease;
+            /* Smooth transition */
         }
 
-        
+        section div img:hover {
+            transform: scale(1.05);
+            /* Slightly enlarges on hover */
+        }
+
+
+
 
         a {
             background-color: rgb(243, 235, 235);
@@ -93,7 +101,7 @@
             justify-content: center;
             border: 1.5px solid rgb(162, 14, 3);
             padding: 10px;
-            color:  rgb(30, 24, 29);
+            color: rgb(30, 24, 29);
             text-decoration: none;
             gap: 20px;
             align-items: center;
@@ -109,13 +117,14 @@
         a i {
             font-size: 1.3em;
         }
+
         section p {
             color: rgb(156, 40, 4);
             font-size: 1.2em;
         }
 
         .footer {
-            
+
             color: rgb(156, 34, 4);
             border-radius: 4px;
             margin-top: 20px;
@@ -123,6 +132,7 @@
             flex-direction: column;
             gap: 10px;
         }
+
         .footer a {
             display: flex;
             gap: 10px;
@@ -130,8 +140,6 @@
             text-decoration: none;
             color: rgb(156, 32, 4);
         }
-
-
     </style>
 </head>
 
@@ -155,19 +163,20 @@
                     <i class="fa-brands fa-tiktok"></i>
                     <p>Tiktok</p>
                 </a>
-           </div>
-<div class="footer">
-    <p>
-        <a href="tel:862-296-6063">862-296-6063</a>
-    </p>
-    <p>
-        <a href="https://www.google.com/maps/search/?api=1&query=59+N+Sussex+Street+Dover+NJ" target="_blank" rel="noopener noreferrer">
-            59 N Sussex Street, Dover NJ<i class="fa-solid fa-location-arrow"></i>
-        </a>
-    </p>
-</div>
+            </div>
+            <div class="footer">
+                <p>
+                    <a href="tel:862-296-6063">862-296-6063</a>
+                </p>
+                <p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=59+N+Sussex+Street+Dover+NJ"
+                        target="_blank" rel="noopener noreferrer">
+                        59 N Sussex Street, Dover NJ<i class="fa-solid fa-location-arrow"></i>
+                    </a>
+                </p>
+            </div>
 
-            
+
     </section>
 </body>
 
